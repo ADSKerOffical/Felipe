@@ -1,0 +1,156 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Escape running head", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+	Name = "Control Heads",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Godmode",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/ignore-touchinterests/main/main",true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Telekinesis",
+	Callback = function()
+      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/SAZXHUB/Control-update/main/README.md'),true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Bring Filippov",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/WkZwcGjf", true))()
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Head player",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Speed and JumpPower",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+      while wait() do
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 150
+end
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Teleport",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "End stage 0",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-679.2587280273438, 131.50738525390625, 6.938565254211426)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "End stage 1",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1451.792724609375, 27.958019256591797, -14.413619995117188)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "End stage 2",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-336.4259338378906, 14.998025894165039, -5.975295066833496)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "End stage 3",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-337, 15, -6)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "End stage 4",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-893, 189, -20)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "End stage 5",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1606, 46, -69)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "End stage 6",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1414, 3, -54)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "End stage 7",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1679, 18, 374)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "End stage 8",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(44, 50, -1175)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "End stage 9",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1835, 44, -494)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "End stage 10",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-293, 431, -114)
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Gamepasses",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Became boss",
+	Callback = function()
+      		game:GetService("Players").LocalPlayer.GamePasses.BecameBoss.Value = true
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Double Jump",
+	Callback = function()
+      		game:GetService("Players").LocalPlayer.GamePasses.DoubleJump.Value = true
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Skip stages",
+	Callback = function()
+      		game:GetService("Players").LocalPlayer.GamePasses.SkipStage.Value = true
+  	end    
+})
