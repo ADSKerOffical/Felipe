@@ -8,12 +8,23 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddToggle({
-	Name = "Godmode (development)",
-	Default = false,
-	Callback = function(Value)
-		print(Value)
-	end    
+Tab:AddButton({
+ Name = "Godmode",
+ Callback = function()
+        local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/lolpoppyus/Roblox-Lua/master/Pop%20UI%20Lib", true))()
+
+local ui = library:Tab("Godmode")
+
+ui:Toggle("Vice versa", function(arg)
+	local player = game:GetService("Players").LocalPlayer
+while task.wait() do
+local parts = workspace:GetPartBoundsInRadius(player.Character:WaitForChild("HumanoidRootPart").Position, 10)
+for _, part in ipairs(parts) do
+part.CanTouch = arg
+end
+end
+end)
+   end    
 })
 
 Tab:AddButton({
