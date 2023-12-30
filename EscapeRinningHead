@@ -9,16 +9,10 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddToggle({
-	Name = "Godmode",
+	Name = "Godmode (development)",
 	Default = false,
 	Callback = function(Value)
-		local player = game:GetService("Players").LocalPlayer
-while task.wait() do
-local parts = workspace:GetPartBoundsInRadius(player.Character:WaitForChild("HumanoidRootPart").Position, 10)
-for _, part in ipairs(parts) do
-part.CanTouch = Value
-end
-end
+		print(Value)
 	end    
 })
 
