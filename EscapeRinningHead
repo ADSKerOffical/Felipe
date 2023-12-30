@@ -8,11 +8,18 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddButton({
+Tab:AddToggle({
 	Name = "Godmode",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/ignore-touchinterests/main/main",true))()
-  	end    
+	Default = false,
+	Callback = function(Value)
+		local player = game:GetService("Players").LocalPlayer
+while task.wait() do
+local parts = workspace:GetPartBoundsInRadius(player.Character:WaitForChild("HumanoidRootPart").Position, 10)
+for _, part in ipairs(parts) do
+part.CanTouch = Value
+end
+end
+	end    
 })
 
 Tab:AddButton({
