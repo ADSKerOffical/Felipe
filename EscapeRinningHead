@@ -4,7 +4,7 @@ local Window = OrionLib:MakeWindow({Name = "Escape running head", HidePremium = 
 
 local Tab = Window:MakeTab({
                     Name = "Home",
-                    Icon = "http://www.roblox.com/asset/?id=4370345144",
+                    Icon = "rbxassetid://4483345998",
                     PremiumOnly = false
 })
 
@@ -151,6 +151,80 @@ Tab:AddButton({
 	Callback = function()
       		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-293, 431, -114)
   	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Game teleport"
+})
+
+Tab:AddButton({
+ Name = "Stage 1",
+ Callback = function()
+        game:GetService("TeleportService"):Teleport(6205205961)
+   end    
+})
+
+Tab:AddButton({
+ Name = "Stage 2",
+ Callback = function()
+        game:GetService("TeleportService"):Teleport(636487958)
+   end    
+})
+
+Tab:AddButton({
+ Name = "Stage 3",
+ Callback = function()
+        game:GetService("TeleportService"):Teleport(6364881161)
+   end    
+})
+
+Tab:AddButton({
+ Name = "Stage 4",
+ Callback = function()
+        game:GetService("TeleportService"):Teleport(6391540653)
+   end    
+})
+
+Tab:AddButton({
+ Name = "Stage 5",
+ Callback = function()
+        game:GetService("TeleportService"):Teleport(6391642302)
+   end    
+})
+
+Tab:AddButton({
+ Name = "Stage 6",
+ Callback = function()
+        game:GetService("TeleportService"):Teleport(6463986562)
+   end    
+})
+
+Tab:AddButton({
+ Name = "Stage 7",
+ Callback = function()
+        game:GetService("TeleportService"):Teleport(6481131111)
+   end    
+})
+
+Tab:AddButton({
+ Name = "Stage 8",
+ Callback = function()
+        game:GetService("TeleportService"):Teleport(6507405695)
+   end    
+})
+
+Tab:AddButton({
+ Name = "Stage 9",
+ Callback = function()
+        game:GetService("TeleportService"):Teleport(6815760584)
+   end    
+})
+
+Tab:AddButton({
+ Name = "Stage 10",
+ Callback = function()
+        game:GetService("TeleportService"):Teleport(8709253565)
+   end    
 })
 
 local Tab = Window:MakeTab({
