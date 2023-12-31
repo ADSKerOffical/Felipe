@@ -15,6 +15,15 @@ Tab:AddButton({
    end    
 })
 
+Tab:AddButton({
+ Name = "low server",
+ Callback = function()
+        local module = loadstring(game:HttpGet"https://raw.githubusercontent.com/LeoKholYt/roblox/main/lk_serverhop.lua")()
+
+module:Teleport(game.PlaceId)
+   end    
+})
+
 local Tab = Window:MakeTab({
 	Name = "Control Heads",
 	Icon = "rbxassetid://4483345998",
@@ -48,7 +57,7 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-	Name = "Bring Filippov",
+	Name = "Teleport heads",
 	Callback = function()
       		loadstring(game:HttpGet("https://pastebin.com/raw/WkZwcGjf", true))()
   	end    
@@ -68,6 +77,20 @@ Tab:AddButton({
 game.Players.LocalPlayer.Character.Humanoid.JumpPower = 150
 end
   	end    
+})
+
+Tab:AddButton({
+ Name = "Esp players",
+ Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/AFGfwLgQ"))()
+   end    
+})
+
+Tab:AddButton({
+ Name = "Kill all(not recommended)",
+ Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/ubsmRJ0N"))()
+   end    
 })
 
 local Tab = Window:MakeTab({
