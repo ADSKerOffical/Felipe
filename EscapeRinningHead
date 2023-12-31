@@ -3,6 +3,19 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 local Window = OrionLib:MakeWindow({Name = "Escape running head", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 local Tab = Window:MakeTab({
+                    Name = "Home",
+                    Icon = "http://www.roblox.com/asset/?id=4370345144",
+                    PremiumOnly = false
+})
+
+Tab:AddButton({
+ Name = "Rejoin",
+ Callback = function()
+        game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, game.Players.LocalPlayer)
+   end    
+})
+
+local Tab = Window:MakeTab({
 	Name = "Control Heads",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
@@ -101,7 +114,7 @@ Tab:AddButton({
 Tab:AddButton({
 	Name = "End stage 5",
 	Callback = function()
-      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1606, 46, -69)
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1868.967041015625, 46.06800842285156, -327.797607421875)
   	end    
 })
 
